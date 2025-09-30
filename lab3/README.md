@@ -230,6 +230,7 @@ In this task, you'll complete the pipeline setup by adding the Deploy to prod st
 1. Select **Save and Close** from the bar on top.
    
     ![](./assets/create-pipeline-new-development-env-details(6)(1).png)
+1. Again click on **Save and Close** from the bar on top to save the pipeline.
 
 ## Task 2: Run the deployment to the QA environment
 
@@ -264,9 +265,7 @@ In this task, you’ll deploy the solution built in Lab 2 to both the QA and Pro
 
     ![](./assets/bs83.png)
 
-     >**Note**: You may get an error like **Validation failed due to Missing dependencies**, in that case please navigate to **Real Estate Showings** app, click on **Save** and select **Publish** again. Repeat this for 2-3 times.
-
-     - Then navigate back to the **Summary** page and click on **Deploy** again.
+     >**Note**: You may get an error like **Validation failed due to Missing dependencies**, in that case publish all customizations in the MPCC23 solution. Then navigate back to the **Summary** page and click on **Deploy** again.
 
 1. It will take a couple of minutes to deploy the solution to the QA environment. After it's done, the overview page for the pipelines should look like this:
 

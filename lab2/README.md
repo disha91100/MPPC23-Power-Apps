@@ -143,13 +143,13 @@ With Excel to App, you can quickly turn an Excel file into a functional canvas a
 
 1. Make sure the gallery is still in edit mode. And select the gallery **Body** **(1)** containing the Price,
 
-    - Change the Text value to **Text(ThisItem.Price, "$#,##0", "en-US")** **(2)** next to the Copilot icon. The body value will change as displayed in the screenshot below.
+    - Change the Text value to `Text(ThisItem.Price, "$#,##0", "en-US")` **(2)** next to the Copilot icon. The body value will change as displayed in the screenshot below.
 
       ![](../Media/L2T30.png)
 
 1. Select the **Subtitle** **(1)** of the gallery, 
 
-    - Change the Text value to **"Size: " & Text(ThisItem.Size, "#,##0", "en-GB") & " sq ft"** **(2)** next to the Copilot icon. The body value will change as displayed in the screenshot below.
+    - Change the Text value to `"Size: " & Text(ThisItem.Size, "#,##0", "en-GB") & " sq ft"` **(2)** next to the Copilot icon. The body value will change as displayed in the screenshot below.
 
       ![](../Media/L2T31.png)
 
@@ -172,6 +172,8 @@ With Excel to App, you can quickly turn an Excel file into a functional canvas a
 1. Wait for the app to Publish successfully.
 
     ![](../Media/bs41.png)
+
+   > **Note:** Publishing may take a few minutes to complete. You may not see the published pop-up. In that case, open the Power App in a new tab and check the **Apps** section to verify if the app is listed. Then continue with the further steps.
 
 1. Click on **<- Back** to exit the app to return to the Power Apps home page. 
 
@@ -221,6 +223,9 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
     - `Agent name`
     - `Client name`
 
+    > **Note:** If Copilot generates other responses, you can modify the table by adding or removing columns as needed using prompts, and edit the columns to match the names mentioned above.
+
+
 1. In the text box, at the bottom of the **Copilot** pane to the right of the screen, type the following prompt **(1)** and then click on **Send**.
 
     **`add a column for client full name in Real Estate Showing table`** **(1)**
@@ -228,6 +233,8 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
     - You'll see that Copilot has provided feedback that the table has been updated and you should also see the new column **Client Full Name** **(2)** added to the table:
 
       ![](../Media/bs46.png)
+
+      
 
 1. Now type the following into the chat **(1)** and then select the **Send** button.
 
@@ -448,6 +455,18 @@ In this task, you will add the components we just created via Copilot to the `MP
 1. Select **Include all objects** **(1)** at both tables and select the **Add** **(2)** button at the bottom.
 
     ![](../Media/L2T4S5.png)
+
+1. Click the three ellipses **... (1)** next to the **App**, select **Advanced (2)**, then choose **+Add required objects (3)**.  
+
+   ![](../Media/L2T4S6.png)
+
+2. In the pop-up that appears, click **Add**.  
+
+   ![](../Media/L2T4S7.png)
+
+3. Repeat the same steps for the **Real Estate Showings** canvas app. Click the three ellipses **...** **(1)** next to the app. Select **Advanced (2)** then click **+ Add required objects (3)**. Click **Add** in the pop-up that appears. 
+
+   ![](../Media/L2T4S8.png)
 
 ## Review
 
