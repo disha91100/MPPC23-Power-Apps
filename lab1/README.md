@@ -145,7 +145,15 @@ In this task, you will connect your GitHub Codespace to the Power Platform using
 
     ![Screenshot of new terminal menu](../Media/bs8.png)
 
-    A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+    > **Note**: A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+
+1. To install Power Platform CLI, run this command in the terminal and press **Enter**
+
+    ```bash
+    dotnet tool install --global Microsoft.PowerApps.CLI.Tool --version 1.38.3
+    ```
+
+    ![](../Media/installcli.png)
 
 1. Type the following command in the terminal and then press **Enter**:
 
