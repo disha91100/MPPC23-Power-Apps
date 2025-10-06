@@ -17,7 +17,7 @@ In this lab, you will go though the following tasks:
 - Task 2: Add Power Platform as a connected service
 - Task 3: Create a canvas app with the custom connector
 
-## ☑️ Task 1: Create an ASP.NET project in Visual Studio
+## Task 1: Create an ASP.NET project in Visual Studio
 
 In this task, we will create an ASP.NET project in Visual Studio.
 
@@ -99,7 +99,7 @@ In this task, we will create an ASP.NET project in Visual Studio.
 
    - Make sure `Swashbuckle.AspNetCore` is installed
 
-## ☑️ Task 2: Add Power Platform as a connected service
+## Task 2: Add Power Platform as a connected service
 
 In this task, you will add the Connected Service for Power Platform to your ASP.NET Code Web API project.
 
@@ -159,8 +159,7 @@ In this task, you will add the Connected Service for Power Platform to your ASP.
  
     ![TODO](./assets/bs154.png)
 
-## ☑️ Task 3: Create a canvas app with the custom connector
-## Create a Canvas App Connected to Your ASP.NET Web API
+## Task 3: Create a canvas app with the custom connectorI
 
 This task guides you through creating a canvas app that connects to your ASP.NET Web API via a custom connector and displays data in a gallery.
 
@@ -221,7 +220,6 @@ This task guides you through creating a canvas app that connects to your ASP.NET
    - The app should display similar to the example below:
     
         ![Screenshot of a Power Apps canvas app created using the sample ASP.NET Weather web API.](./assets/vs-powerapp.png)
-
 
 ## Review
 
