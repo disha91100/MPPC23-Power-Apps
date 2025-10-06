@@ -145,7 +145,15 @@ In this task, you will connect your GitHub Codespace to the Power Platform using
 
     ![Screenshot of new terminal menu](../Media/bs8.png)
 
-    A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+    > **Note**: A terminal window has now been opened for you. This is where you will write all of the following commands in this lab and in the upcoming labs as well.
+
+1. To install Power Platform CLI, run this command in the terminal and press **Enter**
+
+    ```bash
+    dotnet tool install --global Microsoft.PowerApps.CLI.Tool --version 1.38.3
+    ```
+
+    ![](../Media/installcli.png)
 
 1. Type the following command in the terminal and then press **Enter**:
 
@@ -213,9 +221,12 @@ In this workshop, we will create one environment through the UI, one via PPAC, a
 In this task, you will subscribe to the Power Apps Developer Plan to create your own personal development environment. This environment will be renamed to Dev and used for app development and testing throughout the lab.
 
 1. Open **Microsoft Edge** browser and navigate to the [Power Apps Developer Plan](https://aka.ms/pp/devplan) website
-1. Scroll down and select **Try for free** under **Developer plan**.
+1. On the top-right side of the page, click **Start Free**.
 
     ![Power Apps Developer Plan website with 'Get Started Free' and 'Existing user? Add a dev environment' buttons](../Media/Dev1.png)
+    
+1. Scroll down and click **Get started** under *Sign up for a free developer account — with no time limits*.
+    ![](../Media/Dev1_1.png)
 
 1. Enter the **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**, select the **Check box** **(2)** to agree to terms, and click on **Start Free** **(3)**.
 

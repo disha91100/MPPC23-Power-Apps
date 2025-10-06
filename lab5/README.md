@@ -17,7 +17,7 @@ In this lab, you will go though the following tasks:
 - Task 2: Add Power Platform as a connected service
 - Task 3: Create a canvas app with the custom connector
 
-## ☑️ Task 1: Create an ASP.NET project in Visual Studio
+## Task 1: Create an ASP.NET project in Visual Studio
 
 In this task, we will create an ASP.NET project in Visual Studio.
 
@@ -28,6 +28,18 @@ In this task, we will create an ASP.NET project in Visual Studio.
 1. Select **Create a new project**.
 
     ![TODO](./assets/bs133.png)
+
+1. If no tools are installed, click **Install more tools and features**. This opens the Visual Studio Installer.
+
+    ![TODO](./assets/bs133_1.png)
+
+2. Verify that the **ASP.NET and web development (1)** workload is installed. If not, select it and click **Modify (2)** to install.
+
+     ![TODO](./assets/bs133_2.png)
+
+1. If a pop-up appears asking to save your work, select **Continue**. After the installation finishes, restart Visual Studio 2022 and choose **Create a new project**.
+
+     ![TODO](./assets/bs133_3.png)
 
 1. Search for `ASP.NET Core Web API` **(1)**, select `ASP.NET Core Web API` **(2)** the one that has **C# (3)** in the tags and select **Next (4)**.
 
@@ -87,7 +99,7 @@ In this task, we will create an ASP.NET project in Visual Studio.
 
    - Make sure `Swashbuckle.AspNetCore` is installed
 
-## ☑️ Task 2: Add Power Platform as a connected service
+## Task 2: Add Power Platform as a connected service
 
 In this task, you will add the Connected Service for Power Platform to your ASP.NET Code Web API project.
 
@@ -114,9 +126,14 @@ In this task, you will add the Connected Service for Power Platform to your ASP.
    - Select your developer environment
    - **Power Platform Solution**: Select **MPPC 23 (1)**
    - In **Custom connectors name**, the value `WeatherSample_Connector` should already be set **(2)**
+
+        > **Note:** If you don't see your connectors, click the **+** icon next to **Custom connectors name**. Create a new connector from blank, select the **dev** environment, name it `WeatherSample_Connector`, and then select **Create**.
+
    - In **Select a public dev tunnel**, select the **+ (3)** icon
 
-     ![TODO](./assets/bs150.png)  
+     ![TODO](./assets/bs150.png) 
+
+1. Click **Next**. 
 
 1. On the **Account** page, provide the following details:      
 
@@ -142,44 +159,67 @@ In this task, you will add the Connected Service for Power Platform to your ASP.
  
     ![TODO](./assets/bs154.png)
 
-## ☑️ Task 3: Create a canvas app with the custom connector
+## Task 3: Create a canvas app with the custom connectorI
 
-In this task, you will create a canvas app that connects to your ASP.NET Web API using the custom connector, and display data from the API using a gallery.
+This task guides you through creating a canvas app that connects to your ASP.NET Web API via a custom connector and displays data in a gallery.
 
-When Visual Studio runs a web app and a tunnel is active, the web browser opens to a tunnel URL instead of a localhost URL.
+> **Note:** When running a web app in Visual Studio with a tunnel active, the browser will open to a tunnel URL instead of `localhost`.
 
-1. Run your Visual Studio solution and start debugging.
+1. **Run the API**
+   - Open your Visual Studio solution and start debugging.
+   - When the browser opens to the tunnel URL, a warning page will appear.  
+     Select **Continue**.
 
-1. When the browser opens, a warning page opens with the first request sent to the tunnel URL. Select **Continue**.
+2. **Open Power Apps**, In a new browser tab, go to [Power Apps](https://make.powerapps.com). Select your **Dev** environment from the upper-right corner.
 
-1. With the web API running, open [Power Apps](https://make.powerapps.com) in a new browser tab.
+3. Select **+ Create (1)** and the **Start with blank canvas (2)**.  
 
-1. Select your developer environment in the upper-right corner.
+     ![Create Blank App](./assets/L5T3_1.png)
 
-1. [Create a blank canvas app](https://learn.microsoft.com/power-apps/maker/canvas-apps/create-blank-app) with **Phone** as the format.
+   - Then choose the **Phone** format. Skip the tutorial if prompted.
 
-1. In the top menu, select **Add data**.
+     ![Canvas App from Blank](./assets/L5T3_2.png)
 
-1. Search for and select the **WeatherSample_Connector**, and then select **Connect**. More information: [Add connections to your canvas app](https://learn.microsoft.com/power-apps/maker/canvas-apps/add-data-connection)
+4. **Add a Data Connection**
+   - From the top menu, select **Add data**.
 
-1. Insert a button and drag it to the bottom of the form.
+     ![Add Data](./assets/L5T3_3.png)
 
-1. Change the button **Text** to *Load Data*.
+   - Search for and select **WeatherSample_Connector**, then choose **Connect**.  
+     For more details, see [Add connections to your canvas app](https://learn.microsoft.com/power-apps/maker/canvas-apps/add-data-connection).
 
-1. Enter the following formula in the button's **OnSelect** property:
+5. **Insert a Button**
+   - Insert a **Button** control and move it to the bottom of the screen.
 
-   ```powerapps-dot
-   ClearCollect(weatherCollection, WeatherSample_Connector.GetWeatherForecast())
-   ```
+     ![Insert Button](./assets/L5T3_4.png)
 
-1. Insert a [vertical gallery](https://learn.microsoft.com/power-apps/maker/canvas-apps/add-gallery)
+   - With the button selected, set the **Text** property to `Load Data`.  
 
-1. Select the **weatherCollection** as the data source, and then change the layout to **Title and subtitle**.
+     ![Set Button Text](./assets/L5T3_5.png)
 
-1. Run the app. It should look like the following example:
+6. **Configure Button Action**
+   - Set the button’s **OnSelect** property to the following formula:
+     ```powerapps-dot
+     ClearCollect(weatherCollection, WeatherSample_Connector.GetWeatherForecast())
+     ```
+     ![Set Button Formula](./assets/L5T3_6.png)
 
-![Screenshot of a Power Apps canvas app created using the sample ASP.NET Weather web API.](./assets/vs-powerapp.png)
+1. **Insert a Gallery**
+   - Go to the **Insert** tab, search for **Blank Vertical Gallery**, and select it. 
 
+     ![Insert Gallery](./assets/L5T3_8.png)
+
+2. **Connect the Gallery to Data**
+   - Set the gallery’s **Data source** to **weatherCollection**.
+   - Change the **Layout** to **Title and subtitle**. 
+
+     ![Set Gallery Data Source](./assets/L5T3_8.png)
+
+1. **Run the App**  
+   - Select the **Play** icon in the top-right corner of the screen to run the app.  
+   - The app should display similar to the example below:
+    
+        ![Screenshot of a Power Apps canvas app created using the sample ASP.NET Weather web API.](./assets/vs-powerapp.png)
 
 ## Review
 
