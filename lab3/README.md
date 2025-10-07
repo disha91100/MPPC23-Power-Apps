@@ -83,6 +83,21 @@ In this task, you will create a new deployment pipeline using the Deployment Pip
 
 In this task, you'll link the previously created Dev environment to your deployment pipeline. This allows solutions built in the Dev environment to be moved through the pipeline stages you define.
 
+1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
+
+    - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
+
+        ![](./assets/create-pipeline-new-development-env-ppac-dev(1).png)
+
+    - Select **Manage (1)** from the menu on the left, then click on **Environments (2)** and select the Environment named **Dev** **(3)**.
+
+        ![](./assets/create-pipeline-new-development-env-ppac-dev(2)(1).png)
+
+    - Copy the **Environment ID** in notepad for future use. 
+
+        ![](../assets/bs72.png)
+
+
 1. Let’s move forward with the lab by adding a new development environment. To do this, click the **New Development Environment (1)** button located in the Linked Development Environments section.
 
     ![](./assets/create-pipeline-new-development-env-create(1).png)
@@ -95,21 +110,8 @@ In this task, you'll link the previously created Dev environment to your deploym
 
         ![](./assets/create-pipeline-new-development-env-details(1).png)
 
-1. For the next step, make sure to grab the `Environment Id` from the Power Platform Admin Center
 
-    - Open a new tab and go to the [Power Platform Admin Center](https://aka.ms/ppac)
-
-        ![](./assets/create-pipeline-new-development-env-ppac-dev(1).png)
-
-    - Select **Manage (1)** from the menu on the left, then click on **Environments (2)** and select the Environment named **Dev** **(3)**.
-
-        ![](./assets/create-pipeline-new-development-env-ppac-dev(2)(1).png)
-
-    - Copy the **Environment ID**. 
-
-        ![](../assets/bs72.png)
-
-4. Paste the **Environment ID** copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
+4. Paste the Dev **Environment ID** copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
 
     ![](./assets/bs73.png)
 
@@ -165,7 +167,7 @@ In this task, you'll add your first deployment stage to the pipeline by linking 
 
         ![](./assets/create-pipeline-new-development-env-ppac-qa(3)(1).png)
 
-1. Paste the Environment ID copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
+1. Paste the QA Environment ID copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
 
     ![](./assets/bs74.png)
 
@@ -223,7 +225,7 @@ In this task, you'll complete the pipeline setup by adding the Deploy to prod st
 
         ![](./assets/bs76.png)
 
-1. Paste the **Environment ID** copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
+1. Paste the Prod **Environment ID** copied in the above step, in the **EnvironmentId (1)** section of **Quick Create: Deployment Environment** window, then click **Save and Close (2)**.
 
     ![](./assets/bs77.png)
 

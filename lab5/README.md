@@ -174,11 +174,11 @@ This task guides you through creating a canvas app that connects to your ASP.NET
 
 3. Select **+ Create (1)** and the **Start with blank canvas (2)**.  
 
-     ![Create Blank App](./assets/L5T3_1.png)
+     ![Create Blank App](./assets/L5T3_2.png)
 
    - Then choose the **Phone** format. Skip the tutorial if prompted.
 
-     ![Canvas App from Blank](./assets/L5T3_2.png)
+     ![Canvas App from Blank](./assets/L5T3_1.png)
 
 4. **Add a Data Connection**
    - From the top menu, select **Add data**.
