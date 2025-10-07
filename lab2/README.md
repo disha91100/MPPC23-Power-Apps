@@ -16,7 +16,7 @@ In this lab, you will go though the following tasks:
 - Task 3 : Creating A Solution
 - Task 4: Add The Resources Created By Power Apps Copilot To A Solution
 
-## ☑️ Task 1: Create A Canvas App With Data From An Excel-File
+## ☑️ Task 1: Create A Canvas App with Data from an Excel-File
 
 In this task, you will use the Excel to App functionality in Power Apps to quickly generate a canvas app from an Excel file. This feature allows you to import structured Excel data into a Dataverse table and automatically build an app with screens for browsing, viewing, and editing records. You’ll then customize the gallery layout, add formatting, and publish the app for use within your environment.
 
@@ -137,7 +137,9 @@ With Excel to App, you can quickly turn an Excel file into a functional canvas a
 
     ![](../Media/L2T29.png)
 
-1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell.
+1. The image will then be added to your gallery. Reposition and resize the image so that it is in the center of each gallery cell and set the **Image property** to the following formula:
+
+    **`ThisItem.Image`**
 
     ![](../Media/center-image.png)
 
@@ -262,7 +264,7 @@ In this task, you’ll create an application leveraging Power Apps Copilot.  Thi
 
     ![](../Media/bs49.png)
 
-    > **Note**: `the status choices should be Pending, Confirmed, Scheduled, Cancelled, and Completed`
+    > **Note**: The status choices should be `Pending, Confirmed, Scheduled, Cancelled, and Completed`
 
 1. Select the **X** in the top right corner of the pane to close out.
 
@@ -417,8 +419,8 @@ In this task, you will create a solution for the components we just created via 
 
 1. Add the details below
 
-    - Display name: **Microsoft Power Platform Conference** **(1)**,
-    - Name: **MicrosoftPowerPlatformConference** **(2)**, and 
+    - Display name: **Microsoft Power Platform** **(1)**,
+    - Name: **MicrosoftPowerPlatform** **(2)**, and 
     - Prefix: **mppc** **(3)**. 
     - Select **Save** **(4)** when you're done.
 

@@ -11,7 +11,7 @@ You are a Power Platform developer at Contoso Ltd, responsible for setting up a 
 In this lab, you will go through the following tasks:
 
 - Task 1: Log in to your account
-- Task 2: Create a GitHub account
+- Task 2: GitHub account setup
 - Task 3: Create a fork of the repository for this workshop
 - Task 4: Creating a GitHub Codespace
 - Task 5: Connect to the Power Platform using the Power Platform Command-Line Interface (CLI)
@@ -44,48 +44,48 @@ In this task, you will sign in to the Power Platform using the provided credenti
 
     ![Power apps home page](../Media/power-apps-home-page.png)
 
-## Task 2: Create a GitHub account
+## Task 2: GitHub account setup
 
-In this task, you will create a GitHub account using the provided credentials. This account will be used throughout the workshop for code management, collaboration, and deployment activities.
+> ⚠️ **Important:** You must use your **personal GitHub account** for this workshop.  
+> This account will be used throughout the session for **code management, collaboration, and deployment activities**.
 
-1. Open a new tab on **Microsoft Edge** browser and go to  [GitHub](https://github.com) website.
+1. Open a new tab in **Microsoft Edge**.
 
-1. Click on **Sign up** on the top right corner
+2. Go to [https://github.com](https://github.com).
 
-    ![GitHub home page](../Media/Git1.png)
+3. If you already have a **personal GitHub account**, click **Sign in** (top-right corner) and enter your credentials.
 
-    - Enter your **Email:** **<inject key="AzureAdUserEmail"></inject>** **(1)**
+#### Create a Personal Account (if you don’t have one)
 
-    - Create a **Password:** <inject key="AzureAdUserPassword"></inject> **(2)**
+1. Click **Sign up** (top-right corner).
 
-    - Enter a **username:** **odl-user-<inject key="DeploymentID" enableCopy="false"/>** **(3)**
+   ![GitHub home page](../Media/Git1.png)
 
-    - Uncheck **Receive occasional product updates and announcements** **(4)** and then click **Continue** **(5)**
-        
-      ![GitHub Sign up](../Media/bs1.png)
+2. Fill out the required details:
 
-    -  Click on the **Visual puzzle** 
-        
-       ![GitHub Sign up](../Media/bs2.png)
+   - Enter your **Personal Email Address**.  
+   - Create a **Strong Password**.  
+   - Choose a **Unique Username** (must be available).  
+   - Uncheck **Receive occasional product updates and announcements** (4).  
+   - Click **Continue** (5).  
 
-     - Solve the puzzle to verify your account, and then click **Continue**  
-            
-1. Go to [Outlook for the web](https://outlook.office.com) in a new tab and sign in with the credentials below,
-    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-    
-    - **Password:** <inject key="AzureAdUserPassword"></inject>
+     ![GitHub Sign up](../Media/bs1.png)
 
-    - Under **Inbox** open the **Email** that was sent to you from GitHub and **Copy** the code.
+3. Click the **Visual Puzzle** to verify you are human.
 
-        ![GitHub Sign up](../Media/signup-to-github3.png)
+   ![GitHub Sign up](../Media/bs2.png)
 
-1. Enter the code that was sent to your email address on the GitHub website and click **Continue** to confirm the email address. This should lead you to the sign-in page.
-    
-    - Enter the **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)** and **Password:**  <inject key="AzureAdUserPassword"></inject> **(2)** and click on **Sign in** **(3)**
+4. Solve the puzzle, then click **Continue**.
 
-        ![GitHub Sign up](../Media/Git5.png)
+   ![GitHub Sign up](../Media/signup-to-github3.png)
 
-You now have a GitHub account. Welcome to the GitHub community!
+1. Check your **personal email inbox** for a verification code from GitHub.  
+2. Enter the code on the GitHub verification page and click **Continue**.  
+3. You will be redirected to the sign-in page. Enter your credentials to log in.
+
+     ![GitHub Sign up](../Media/Git5.png)
+
+✅ **You now have a personal GitHub account. Welcome to the GitHub community!**
 
 ## Task 3: Create a fork of the repository for this workshop
 
@@ -115,7 +115,7 @@ In this task, you will create a GitHub Codespace from your forked repository. Th
 
     - Click **Create codespace on main** **(3)**.
 
-      ![TODO: Add image of code button](../Media/Code1.png)
+      ![](../Media/Code11.png)
 
 1. A codespace will now be created for you in a new tab. This will take a few seconds. But once it's done, you will have a fully functional **Visual Studio Code** environment in your browser. You can now start developing!.
 
@@ -150,7 +150,7 @@ In this task, you will connect your GitHub Codespace to the Power Platform using
 1. To install Power Platform CLI, run this command in the terminal and press **Enter**
 
     ```bash
-    dotnet tool install --global Microsoft.PowerApps.CLI.Tool --version 1.38.3
+    dotnet tool install --global Microsoft.PowerApps.CLI.Tool --version 1.44.2
     ```
 
     ![](../Media/installcli.png)

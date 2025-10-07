@@ -18,7 +18,6 @@ By the end of this lab, you will be able to:
 
 - **Enterprise Scale – Scaling Deployments with Approval Gates**: In this hands-on lab, participants will enhance their deployment pipeline by introducing approval gates before pushing changes to the production environment. This exercise demonstrates how to apply enterprise-scale governance and control using the Deployment Pipeline Configuration App.
 
-
 - **Connect your own WebAPI to your Power App**: In this optional hands-on lab, participants will learn how to extend Power Apps functionality by connecting a custom Web API. They will create an ASP.NET project in Visual Studio, register it as a connected service with Power Platform, and build a canvas app that interacts with the API using a custom connector.
 
 
