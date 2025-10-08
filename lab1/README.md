@@ -77,11 +77,12 @@ In this task, you will sign in to the Power Platform using the provided credenti
 
 4. Solve the puzzle, then click **Continue**.
 
+1. Check your **personal email inbox** for a verification code from GitHub.  
+
    ![GitHub Sign up](../Media/signup-to-github3.png)
 
-1. Check your **personal email inbox** for a verification code from GitHub.  
 2. Enter the code on the GitHub verification page and click **Continue**.  
-3. You will be redirected to the sign-in page. Enter your credentials to log in.
+3. You will be redirected to the **sign-in** page. Enter your credentials to log in.
 
      ![GitHub Sign up](../Media/Git5.png)
 
