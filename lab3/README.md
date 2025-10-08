@@ -199,7 +199,7 @@ In this task, you'll complete the pipeline setup by adding the Deploy to prod st
 
     > **Note:**  There is a setting field called `Pre Deployment Step Required`. We're not using that in this case, but think about what could that be used for. During the workshop, the trainers will show an example of it.
 
-1. A new sidebar will appear, allowing you to provide information about your **QA environment**.
+1. A new sidebar will appear, allowing you to provide information about your **Prod environment**.
 
     ![](./assets/create-pipeline-new-deployment-stage(4)(1).png)
 
@@ -259,20 +259,49 @@ In this task, you’ll deploy the solution built in Lab 2 to both the QA and Pro
 
     ![](./assets/bs80.png)
 
+<<<<<<< HEAD
+1. Notice the message displayed below the deployment schedule. It indicates that this pipeline uses AI to generate a solution overview.
+=======
 1. Notice the message displayed below the deployment schedule. It indicates that this pipeline uses AI to generate a solution overview. Click **Next**.
+>>>>>>> f97755747ee7936b3d0f2cb75b95fccbdc977d5b
 
     ![](./assets/bs82.png)
 
+<<<<<<< HEAD
+1. Keep all settings at their default values, then click the **Next** button at the bottom of the sidebar. This takes you to the `Summary` section, where you’ll find key details about the solution you're deploying to the QA environment, including an AI-generated solution overview.
+=======
 1. This takes you to the `Summary` section, where you’ll find key details about the solution you're deploying to the QA environment, including an AI-generated solution overview. Now the AI suggested solution overview is added in the `Deployment notes` box **(1)** and then click on **Deploy (2)**.
+>>>>>>> f97755747ee7936b3d0f2cb75b95fccbdc977d5b
 
     ![](./assets/bs83.png)
 
+<<<<<<< HEAD
+1. When you're happy with that AI generated solution overview, select the **Apply** button below the AI suggested solution overview. 
+=======
      >**Note**: You may get an error like **Validation failed due to Missing dependencies**, in that case publish all customizations in the MPCC23 solution. Then navigate back to the **Summary** page and click on **Deploy** again.
+>>>>>>> f97755747ee7936b3d0f2cb75b95fccbdc977d5b
 
+<<<<<<< HEAD
+1. Now the AI suggested solution overview is added in the `Deployment notes` box
+=======
 1. It will take a couple of minutes to deploy the solution to the QA environment. After it's done, the overview page for the pipelines should look like this:
+>>>>>>> f97755747ee7936b3d0f2cb75b95fccbdc977d5b
 
     ![](./assets/bs85.png)
 
+<<<<<<< HEAD
+1. Check the AI suggested solution overview to make sure it doesn't include any errors and correct where needed.
+
+1. Select the **Deploy** button.
+
+    ![](./assets/run-first-pipeline-summary-deploy.png)
+
+It will take a couple of minutes to deploy the solution to the QA environment. After it's done, the overview page for the pipelines should look like this:
+
+![](./assets/run-first-pipeline-deploy-to-QA-success.png)
+
+=======
+>>>>>>> f97755747ee7936b3d0f2cb75b95fccbdc977d5b
 As you can see, the last deployed solution version and last deployed date time are visible here.
 
 ##  Task 3: Test if the solution was correctly deployed to QA
