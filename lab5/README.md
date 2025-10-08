@@ -159,6 +159,10 @@ In this task, you will add the Connected Service for Power Platform to your ASP.
  
     ![TODO](./assets/bs154.png)
 
+    > Note: If you encounter any build errors, ensure that all necessary NuGet packages are installed and that your project references are correctly set up.
+
+1. Debug and run the project.
+
 ## Task 3: Create a canvas app with the custom connectorI
 
 This task guides you through creating a canvas app that connects to your ASP.NET Web API via a custom connector and displays data in a gallery.
@@ -213,7 +217,7 @@ This task guides you through creating a canvas app that connects to your ASP.NET
    - Set the gallery’s **Data source** to **weatherCollection**.
    - Change the **Layout** to **Title and subtitle**. 
 
-     ![Set Gallery Data Source](./assets/L5T3_8.png)
+     ![Set Gallery Data Source](./assets/L5T3_9.png)
 
 1. **Run the App**  
    - Select the **Play** icon in the top-right corner of the screen to run the app.  

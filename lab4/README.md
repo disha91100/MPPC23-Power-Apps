@@ -101,7 +101,8 @@ In this task, you will learn how to create an approval flow that will handle the
     ```
     @equals(triggerOutputs()?['body/OutputParameters/DeploymentStageName'], 'Deploy to prod')
     ```
-
+    > **Note**: Make sure to replace the names in the trigger conditions if you have used different names for your pipeline or deployment stage.
+    
 1. Select the **Done** button at the bottom of the trigger card to save the trigger conditions.
 
     ![](./assets/extend-pipeline-cloud-flow-trigger-settings-save-condition(1).png)
