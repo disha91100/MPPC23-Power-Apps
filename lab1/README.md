@@ -192,6 +192,8 @@ In this task, you will connect your GitHub Codespace to the Power Platform using
 
     ![Screenshot of the Auth Profiles section with the Refresh button](../Media/bs12.png)
 
+    > **Note:** Sometimes, you might not see **Auth Profiles** due to **MFA**. **If that happens, please move on to Task 6**.    
+
     > **Note:** You should now see at least one auth profile. If you have more than one, you can select the one you want to use by clicking on the **Select Auth Profile** button next to the auth profile.
 
     ![Select Auth Profile](../Media/bs13.png)
@@ -336,7 +338,7 @@ In this task, you will use the Power Platform CLI to view available environments
 
     ![Copy of Dev environment ID](../Media/T72.png)
 
-1. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```00000000-0000-0000-0000-000000000000``` with the **Environment id** that you copied above.
+1. Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```<00000000-0000-0000-0000-000000000000>``` with the **Environment id** that you copied above.
 
     ```bash
     pac org select --environment <00000000-0000-0000-0000-000000000000>
@@ -438,6 +440,22 @@ In this task, you will install the Power Platform Pipelines application in the P
 1. Open the Power Platform Tools VS Code Extension by selecting the **Power Platform DevTools (1)** icon on the left, make sure you see the `Prod` **(2)** environment in the Environments & Solutions panel and select the **empty star (3)** behind it to select the right environment.
 
     ![](../Media/bs22.png)
+
+     >**Note**: If you do not see **Enviromnents and Solutions**, please follow the below steps to connect to **Prod** Env.
+
+      - In the terminal, type the following command and then press **Enter**:
+
+        ```bash
+        pac org list
+        ```     
+
+      - Copy the **Environment ID** of the **Prod** Environment and paste it into Notepad.
+
+      - Then in the terminal, type the following command and then press **Enter**. Make sure to replace ```<00000000-0000-0000-0000-000000000000>``` with the **Environment id** that you copied above.
+
+        ```bash
+        pac org select --environment <00000000-0000-0000-0000-000000000000>
+        ```        
 
 1. Enter the following command:
 
