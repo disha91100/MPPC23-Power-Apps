@@ -199,7 +199,7 @@ In this task, you'll complete the pipeline setup by adding the Deploy to prod st
 
     > **Note:**  There is a setting field called `Pre Deployment Step Required`. We're not using that in this case, but think about what could that be used for. During the workshop, the trainers will show an example of it.
 
-1. A new sidebar will appear, allowing you to provide information about your **QA environment**.
+1. A new sidebar will appear, allowing you to provide information about your **Prod environment**.
 
     ![](./assets/create-pipeline-new-deployment-stage(4)(1).png)
 
